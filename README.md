@@ -16,3 +16,7 @@ Datool is a tool made to manipulate container files from OkamiHD. This tool have
 
 To learn more about the program's interface, i recommend watching this tutorial which shows how to change skin textures using Datool:
 https://www.youtube.com/watch?v=ca5_WjOXNxc
+
+
+[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=ca5_WjOXNxc/0.jpg)](https://www.youtube.com/watch?v=ca5_WjOXNxc)
+
