@@ -18,5 +18,6 @@ To learn more about the program's interface, i recommend watching this tutorial 
 https://www.youtube.com/watch?v=ca5_WjOXNxc
 
 
-[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=ca5_WjOXNxc/0.jpg)](https://www.youtube.com/watch?v=ca5_WjOXNxc)
+[![https://github.com/user-attachments/assets/56a70c1b-825f-4ef1-8ff4-c686389ab9ef](https://www.youtube.com/watch?v=ca5_WjOXNxc/0.jpg)](https://www.youtube.com/watch?v=ca5_WjOXNxc)
 
+<img width="1448" height="816" alt="image" src="https://github.com/user-attachments/assets/56a70c1b-825f-4ef1-8ff4-c686389ab9ef" />
