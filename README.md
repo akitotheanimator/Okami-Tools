@@ -15,9 +15,6 @@ Datool is a tool made to manipulate container files from OkamiHD. This tool have
 - Batch decrypt and extract DAT files
 
 To learn more about the program's interface, i recommend watching this tutorial which shows how to change skin textures using Datool:
-https://www.youtube.com/watch?v=ca5_WjOXNxc
-
-
 [![](https://github.com/user-attachments/assets/56a70c1b-825f-4ef1-8ff4-c686389ab9ef)](https://www.youtube.com/watch?v=ca5_WjOXNxc)
 
 
