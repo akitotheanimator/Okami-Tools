@@ -1,0 +1,434 @@
+[gd_scene format=3 uid="uid://cspedc18pljkc"]
+
+[ext_resource type="Script" uid="uid://b3axpqf5nttsa" path="res://scripts/app.gd" id="1_j6dmo"]
+[ext_resource type="Shader" uid="uid://xb7r2cn0r6c8" path="res://shader/app.gdshader" id="1_qbwvd"]
+[ext_resource type="Script" uid="uid://dj3coecwq7giw" path="res://scripts/manager.gd" id="3_acaik"]
+[ext_resource type="Script" uid="uid://dkxkoou7rxww" path="res://scripts/LOG.gd" id="3_atqe7"]
+[ext_resource type="Texture2D" uid="uid://b0kaown83lqea" path="res://about.png" id="3_i4801"]
+[ext_resource type="Script" uid="uid://bhlt26jhct8a6" path="res://scripts/encdat.gd" id="4_5oejy"]
+[ext_resource type="Script" uid="uid://nofnd2altahr" path="res://scripts/about_text.gd" id="4_d7sxu"]
+[ext_resource type="Script" uid="uid://jqu2mdg21c7f" path="res://scripts/about.gd" id="4_v7vdx"]
+[ext_resource type="Texture2D" uid="uid://e1t8uwkr3unj" path="res://close.png" id="5_nee2x"]
+[ext_resource type="Script" uid="uid://6xtg7gbtxbxc" path="res://scripts/datc.gd" id="5_x8rub"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i4801"]
+shader = ExtResource("1_qbwvd")
+shader_parameter/stripes = 10.0
+shader_parameter/stripe_thickness = 0.02
+shader_parameter/stripe_color = Color(0.99994475, 0, 0.28405583, 1)
+shader_parameter/background_color = Color(0.10980392, 0.10980392, 0.10980392, 1)
+shader_parameter/speed = 0.2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_atqe7"]
+bg_color = Color(0.6, 0.6, 0.6, 0.29411766)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7vdx"]
+bg_color = Color(0.09411765, 0.09411765, 0.09411765, 0.37254903)
+
+[sub_resource type="Theme" id="Theme_v7vdx"]
+PopupMenu/styles/hover = SubResource("StyleBoxFlat_atqe7")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_v7vdx")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qbwvd"]
+shader = ExtResource("1_qbwvd")
+shader_parameter/stripes = 10.0
+shader_parameter/stripe_thickness = 0.02
+shader_parameter/stripe_color = Color(9.62615e-08, 0.6626824, 0.8396809, 1)
+shader_parameter/background_color = Color(0, 0, 0, 1)
+shader_parameter/speed = 0.2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_acaik"]
+bg_color = Color(1, 1, 1, 0.5294118)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jq15t"]
+bg_color = Color(0.10980392, 0.10980392, 0.10980392, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0, 0.28235295, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rgcu8"]
+bg_color = Color(0.017732397, 0.01773239, 0.01773239, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.5791817, 0, 0.14775217, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iho0w"]
+bg_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.5315543, 0.54793775, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jndut"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.6627451, 0.8392157, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ovwn0"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1.347661e-06, 0.39790285, 0.50925696, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7iiwk"]
+bg_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.40301666, 0.8372591, 0.99999994, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a37lv"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.6627451, 0.8392157, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gtgpg"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1.347661e-06, 0.39790285, 0.50925696, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ra7kh"]
+bg_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.40301666, 0.8372591, 0.99999994, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="app" type="ColorRect" unique_id=1436635774]
+material = SubResource("ShaderMaterial_i4801")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.11119685, 0.11119684, 0.11119684, 1)
+script = ExtResource("1_j6dmo")
+
+[node name="title" type="Label" parent="." unique_id=726617441]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 125.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 32
+text = "DaTool"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="options" type="MenuButton" parent="." unique_id=2026390027]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 17.0
+offset_right = 214.0
+offset_bottom = 70.0
+theme = SubResource("Theme_v7vdx")
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "File"
+alignment = 0
+item_count = 3
+popup/item_0/text = "Import DAT (CTRL + A)"
+popup/item_0/id = 0
+popup/item_1/text = "Save Encrypted DAT (CTRL + E)"
+popup/item_1/id = 1
+popup/item_2/text = "Save DAT (CTRL + D)"
+popup/item_2/id = 2
+
+[node name="panel" type="ColorRect" parent="." unique_id=1548379654]
+material = SubResource("ShaderMaterial_qbwvd")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 15.0
+offset_top = 124.0
+offset_right = -13.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2532886, 0.28745577, 0.34072137, 1)
+
+[node name="panelscroll" type="ScrollContainer" parent="panel" unique_id=203809348]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="panelcontainer" type="VBoxContainer" parent="panel/panelscroll" unique_id=1484876501]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("3_acaik")
+
+[node name="Button" type="Button" parent="panel/panelscroll/panelcontainer" unique_id=1818927128]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/pressed = SubResource("StyleBoxFlat_acaik")
+toggle_mode = true
+button_pressed = true
+button_mask = 3
+text = "awdawdawdawdawdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+alignment = 0
+autowrap_trim_flags = 0
+clip_text = true
+
+[node name="tip" type="Label" parent="." unique_id=1258992080]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 15.0
+offset_top = 125.0
+offset_right = -13.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Drag and drop a DAT here to visualize it's contents."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="about" type="Button" parent="." unique_id=593413764]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -71.0
+offset_right = -7.0
+offset_bottom = 123.0
+grow_horizontal = 0
+icon = ExtResource("3_i4801")
+flat = true
+expand_icon = true
+
+[node name="encdat" type="CheckBox" parent="." unique_id=2020717577]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -336.0
+offset_top = 61.0
+offset_right = -76.0
+offset_bottom = 92.0
+grow_horizontal = 0
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 14
+button_pressed = true
+text = "Save decrypted DAT upon loading"
+alignment = 2
+script = ExtResource("4_5oejy")
+
+[node name="datc" type="CheckBox" parent="." unique_id=752047547]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -335.0
+offset_top = 25.0
+offset_right = -75.0
+offset_bottom = 56.0
+grow_horizontal = 0
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 14
+button_pressed = true
+text = "Save DAT contents upon loading"
+alignment = 2
+script = ExtResource("5_x8rub")
+
+[node name="about_sect" type="ColorRect" parent="." unique_id=194925713]
+visible = false
+self_modulate = Color(1, 1, 1, 0.84313726)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("4_v7vdx")
+
+[node name="text" type="RichTextLabel" parent="about_sect" unique_id=466933953]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+theme_override_font_sizes/bold_italics_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+theme_override_font_sizes/mono_font_size = 24
+bbcode_enabled = true
+text = "DaTool is a program to manage okami HD's generic container formats. 
+Currently, it supports the following formats:
+
+* .dat
+* .ddp
+
+other extensions from okami hd are still untested, the list of format support is 
+subjected to change over time.
+
+This program is FREE and OPEN-SOURCE, if you bought it somewhere, 
+[color=RED]you got scammed.[/color]
+
+If a bug was found, please report on the [i][color=YELLOW][url=https://github.com/akitotheanimator/Okami-Tools]Okami-Tools[/url][/color][/i] github page
+referring to [i][color=YELLOW][url=https://github.com/akitotheanimator/Okami-Tools/issues]DaTool[/url][/color] on the Issues section.[/i]"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_d7sxu")
+
+[node name="close" type="Button" parent="about_sect" unique_id=295212083]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -71.0
+offset_top = 29.0
+offset_right = -7.0
+offset_bottom = 93.0
+grow_horizontal = 0
+icon = ExtResource("5_nee2x")
+flat = true
+expand_icon = true
+
+[node name="log" type="VBoxContainer" parent="." unique_id=919359082]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 15.0
+offset_top = -54.0
+offset_right = -13.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("3_atqe7")
+
+[node name="context_menu" type="VBoxContainer" parent="." unique_id=348398243]
+layout_mode = 0
+offset_left = 699.0
+offset_top = 347.0
+offset_right = 927.0
+offset_bottom = 527.0
+
+[node name="ES" type="Button" parent="context_menu" unique_id=2030067441]
+custom_minimum_size = Vector2(230, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_jq15t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rgcu8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iho0w")
+text = "Export Selected"
+
+[node name="EA" type="Button" parent="context_menu" unique_id=84339571]
+custom_minimum_size = Vector2(230, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_jndut")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ovwn0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7iiwk")
+text = "Export All"
+
+[node name="RS" type="Button" parent="context_menu" unique_id=2015360728]
+custom_minimum_size = Vector2(230, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_jq15t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rgcu8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iho0w")
+text = "Replace Selected"
+
+[node name="RA" type="Button" parent="context_menu" unique_id=618637359]
+visible = false
+custom_minimum_size = Vector2(230, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_a37lv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gtgpg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ra7kh")
+text = "Replace All"
+
+[node name="FileDialog" type="FileDialog" parent="." unique_id=1201231473]
+oversampling_override = 1.0
+position = Vector2i(0, 36)
+display_mode = 1
+access = 2
+use_native_dialog = true
+
+[connection signal="button_down" from="about" to="about_sect" method="appear"]
+[connection signal="meta_clicked" from="about_sect/text" to="about_sect/text" method="_on_meta_clicked"]
+[connection signal="button_down" from="about_sect/close" to="about_sect" method="disappear"]
+[connection signal="button_down" from="context_menu/ES" to="panel/panelscroll/panelcontainer" method="export_partial"]
+[connection signal="button_down" from="context_menu/EA" to="panel/panelscroll/panelcontainer" method="export_all"]
+[connection signal="button_down" from="context_menu/RS" to="panel/panelscroll/panelcontainer" method="FILE_" binds= [9999]]
+[connection signal="file_selected" from="FileDialog" to="panel/panelscroll/panelcontainer" method="file_selected"]
