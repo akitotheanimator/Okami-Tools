@@ -8,7 +8,7 @@ var save_dat_cont:bool = true
 
 var dat_data_array:Array = [] #this is slow but, ehh... DAT files are usually small so i don't think this will be a problem for now.
 
-var supported_file_types:Array[PackedStringArray] = [["*.dat","Data container"], ["*.ddp","Texture Container"]]
+var supported_file_types:Array[PackedStringArray] = [["*.dat","Data container"], ["*.ddp","Texture Container"], ["*.bin","Unknown"]]
 var BASE_PATH:String = ""
 var BASE_EXT:String = ""
 var FLAG_INFO:PackedInt32Array = []
